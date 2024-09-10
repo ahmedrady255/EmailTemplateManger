@@ -1,0 +1,27 @@
+{
+    "name": "ahmedrady255/EmailTemplateManger",
+    "description": "managing email templates",
+    "type": "package",
+    "license": "arr",
+    "autoload": {
+        "psr-4": {
+            "vendor\\EmailTemplateManager\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EmailTemplateManager\\EmailTemplateManagerServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "laravel": "^10.0"
+    },
+    "authors": [
+        {
+            "name": "ar"
+        }
+    ]
+}
