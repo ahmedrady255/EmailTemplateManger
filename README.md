@@ -93,8 +93,35 @@ You can send an email by making a POST request to the API endpoint:
 
 **Example Request:**
 
-```bash
-curl -X POST http://your-laravel-app.com/email-template-manager/send      -d "email_type=welcome_email"      -d "email=test@example.com"      -d "name=Test User"
+```php
+<?php
+
+namespace EmailTemplateManager\Http\Controllers;
+
+use Illuminate\Http\Request;
+use EmailTemplateManager\Services\EmailService;
+
+class EmailController extends Controller
+{
+    protected $emailService;
+
+    public function __construct(EmailService $emailService)
+    {
+        $this->emailService = $emailService;
+    }
+
+    public function sendEmail(Request $request)
+    {
+        $emailType = $request->input('email_type'); // Email type (welcome, order, etc.)
+        $recipient = $request->input('email');
+        $data = $request->all();
+
+        $this->emailService->sendEmail($emailType, $data, $recipient);
+
+        return response()->json(['message' => 'Email sent successfully.']);
+    }
+}
+
 ```
 
 ### Testing
