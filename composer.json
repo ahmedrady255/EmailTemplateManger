@@ -5,13 +5,13 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "EmailTemplateManager\\": "src/"
+            "ahmedrady255\\EmailTemplateManager\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "EmailTemplateManager\\EmailTemplateManagerServiceProvider"
+                "ahmedrady255\\EmailTemplateManager\\EmailTemplateManagerServiceProvider"
             ]
         }
     },
