@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\EmailTemplateManager\Providers;
+namespace EmailTemplateManager;
 
 use Illuminate\Support\ServiceProvider;
 

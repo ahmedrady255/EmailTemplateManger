@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'AhmedRady\\EmailTemplateManager\\' => array($baseDir . '/src'),
+    'EmailTemplateManager\\' => array($baseDir . '/src'),
 );

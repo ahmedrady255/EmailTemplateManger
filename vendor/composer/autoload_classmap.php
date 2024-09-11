@@ -7,4 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'EmailTemplateManager\\Console\\Commands\\InstallSMTPCommand' => $baseDir . '/src/Console/Commands/InstallSMTPCommand.php',
+    'EmailTemplateManager\\Services\\EmailService' => $baseDir . '/src/Services/EmailService.php',
 );

@@ -7,21 +7,23 @@ namespace Composer\Autoload;
 class ComposerStaticInit70fa2593fcb5a28998250b6b036b3203
 {
     public static $prefixLengthsPsr4 = array (
-        'A' =>
+        'E' => 
         array (
-            'AhmedRady\\EmailTemplateManager\\' => 31,
+            'EmailTemplateManager\\' => 21,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'AhmedRady\\EmailTemplateManager\\' =>
+        'EmailTemplateManager\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
     );
 
     public static $classMap = array (
-        'Composer\\InstalledVersions' => __DIR__ . '/vendor' . '/composer/InstalledVersions.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'EmailTemplateManager\\Console\\Commands\\InstallSMTPCommand' => __DIR__ . '/../..' . '/src/Console/Commands/InstallSMTPCommand.php',
+        'EmailTemplateManager\\Services\\EmailService' => __DIR__ . '/../..' . '/src/Services/EmailService.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
