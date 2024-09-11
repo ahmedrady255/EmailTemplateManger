@@ -16,7 +16,7 @@ A Laravel package for managing email templates with built-in SMTP configuration.
 You can install the package via Composer:
 
 ```bash
-composer require your-namespace/email-template-manager
+composer require ahmedrady255/email-template-manager
 ```
 
 ### 2. Publish Configuration and Views
