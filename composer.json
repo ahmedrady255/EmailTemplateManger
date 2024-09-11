@@ -2,7 +2,7 @@
     "name": "ahmedrady255/EmailTemplateManger",
     "description": "managing email templates",
     "type": "package",
-    "license": "arr",
+    "license": "MTI",
     "autoload": {
         "psr-4": {
             "vendor\\EmailTemplateManager\\": "src/"
