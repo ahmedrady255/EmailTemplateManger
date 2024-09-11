@@ -1,0 +1,25 @@
+{
+    "name": "ahmedrady255/email-template-manger",
+    "description": "this package is made to provide templates for different types",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ahmedrady255\\EmailTemplateManager\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ahmedrady255\\EmailTemplateManager\\EmailTemplateManagerServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "AhmedRady"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
