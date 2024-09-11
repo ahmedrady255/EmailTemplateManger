@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "vendor\\EmailTemplateManager\\": "src/"
+            "EmailTemplateManager\\": "src/"
         }
     },
     "extra": {
