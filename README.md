@@ -81,15 +81,7 @@ Define and customize email templates in the `resources/views/vendor/email-templa
 ## Usage
 
 ### Sending an Email
-
-You can send an email by making a POST request to the API endpoint:
-
-**Endpoint**: `/email-template-manager/send`
-
-**Parameters**:
-- `email_type`: The type of email template to use (e.g., `welcome_email`).
-- `email`: The recipient's email address.
-- `name`: The name of the recipient (or any other dynamic data required by the template).
+You can send email by add the service to your controller 
 
 **Example Request:**
 
