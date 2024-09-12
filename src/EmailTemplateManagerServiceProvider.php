@@ -10,7 +10,7 @@ class EmailTemplateManagerServiceProvider extends ServiceProvider
     {
         // Register configurations
         $this->mergeConfigFrom(
-            __DIR__.'/Config/email_templates.php', 'email_templates'
+            __DIR__.'/../Config/email_templates.php', 'email_templates'
         );
         $this->commands([
             \EmailTemplateManager\Console\Commands\InstallSMTPCommand::class,
@@ -27,7 +27,7 @@ class EmailTemplateManagerServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'EmailTemplateManager');
         // Publish assets and config files
         $this->publishes([
-            __DIR__.'/../config/email-templates-manager.php' => config_path('email-templates.php-manager'),
+            __DIR__ . '/../config/email-templates-manager.php' => config_path('email-templates.php-manager'),
         ]);
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/emails'),
