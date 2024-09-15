@@ -1,6 +1,8 @@
 <?php
 namespace ahmedrady255\EmailTemplateManager;
+
 use Illuminate\Support\ServiceProvider;
+
 class EmailTemplateManagerServiceProvider extends ServiceProvider
 {
     /**
@@ -10,12 +12,13 @@ class EmailTemplateManagerServiceProvider extends ServiceProvider
     {
         // Register configurations
         $this->mergeConfigFrom(
-            __DIR__.'/../Config/email_templates.php', 'email_templates'
+            __DIR__.'/config/email-template-manager.php', 'email_templates'
         );
+
+        // Register command
         $this->commands([
             \EmailTemplateManager\Console\Commands\InstallSMTPCommand::class,
         ]);
-
     }
 
     /**
@@ -23,15 +26,16 @@ class EmailTemplateManagerServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //load views
+        // Load views
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'EmailTemplateManager');
+
         // Publish assets and config files
         $this->publishes([
-            __DIR__ . '/../config/email-templates-manager.php' => config_path('email-templates.php-manager'),
+            __DIR__ . '/../config/email-template-manager.php' => config_path('email-templates.php'),
         ]);
+
         $this->publishes([
             __DIR__ . '/../resources/views' => resource_path('views/vendor/emails'),
         ], 'views');
-
     }
 }
