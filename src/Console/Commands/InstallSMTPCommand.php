@@ -1,9 +1,7 @@
-<?php
-
-namespace EmailTemplateManger\Console\Commands;
+namespace EmailTemplateManager\Console\Commands;
 
 use Illuminate\Console\Command;
-use function EmailTemplateManager\Console\Commands\base_path;
+use function base_path;
 
 class InstallSMTPCommand extends Command
 {
