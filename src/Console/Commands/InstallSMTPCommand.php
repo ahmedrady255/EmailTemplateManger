@@ -1,6 +1,6 @@
 <?php
 
-namespace Ahmedrady255\EmailTemplateManger\Console\Commands;
+namespace EmailTemplateManger\Console\Commands;
 
 use Illuminate\Console\Command;
 use function EmailTemplateManager\Console\Commands\base_path;
