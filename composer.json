@@ -22,13 +22,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-<<<<<<< HEAD
         "php": ">=8.1",
         "laravel/framework": "^10.0"
     }
-=======
-        "php":">=8.1",
-        "laravel/frameworke":"^10"
-    
->>>>>>> 486808ae2dd4419113073ec98052485146cab123
 }
