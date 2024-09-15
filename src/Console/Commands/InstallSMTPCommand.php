@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <?php
+=======
+>>>>>>> 486808ae2dd4419113073ec98052485146cab123
 namespace EmailTemplateManager\Console\Commands;
 
 use Illuminate\Console\Command;
