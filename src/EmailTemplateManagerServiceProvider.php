@@ -13,7 +13,7 @@ class EmailTemplateManagerServiceProvider extends ServiceProvider
             __DIR__.'/config/email-template-manager.php', 'email_templates'
         );
         $this->commands([
-            \EmailTemplateManager\Console\Commands\InstallSMTPCommand::class,
+            EmailTemplateManager\Console\Commands\InstallSMTPCommand::class,
         ]);
 
     }
