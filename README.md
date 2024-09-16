@@ -18,16 +18,6 @@ You can install the package via Composer:
 ```bash
 composer require ahmedrady255/email-template-manager
 ```
-
-### 2. Publish Configuration and Views
-
-Publish the configuration file and views to your Laravel application:
-
-```bash
-php artisan vendor:publish --tag=config
-php artisan vendor:publish --tag=views
-```
-
 ### 3. Install SMTP Configuration (Optional)
 
 Run the SMTP installation command to set up default SMTP settings:
