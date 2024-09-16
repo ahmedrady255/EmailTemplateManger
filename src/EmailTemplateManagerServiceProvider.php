@@ -2,6 +2,7 @@
 namespace ahmedrady255\EmailTemplateManager;
 
 use Illuminate\Support\ServiceProvider;
+use ahmedrady255\EmailTemplateManager\Console\Commands\InstallSMTPCommand;
 
 class EmailTemplateManagerServiceProvider extends ServiceProvider
 {
@@ -17,7 +18,7 @@ class EmailTemplateManagerServiceProvider extends ServiceProvider
 
         // Register command
         $this->commands([
-            \EmailTemplateManager\Console\Commands\InstallSMTPCommand::class,
+            InstallSMTPCommand::class,
         ]);
     }
 
